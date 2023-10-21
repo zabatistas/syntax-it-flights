@@ -10,3 +10,10 @@ I approached it the following way:
 4) I then kept two pointers, one that starts at the beginning of my list (smallest duration) and one that starts on the rightmost element.
 5) At each iteration, the method calculates the combined length of the two movies pointed to by the pointers. If this combined length is less than the flight length minus a buffer of 30 minutes, the method increments the left pointer. If the combined length is greater than the flight length, the method decrements the right pointer. If the combined length is between the flight length and the flight length minus the buffer, the method checks if this combined length is greater than the current maximum combined length. If it is, the method updates the maxRuntime, smallerMovieLength, and longestMovieLength variables accordingly.  
 
+
+Run instructions:
+```
+Java 17
+javac Main.java
+java Main 
+```
